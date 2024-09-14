@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Tour of DOM</title>
+    <style>
+        #Fruits-title {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe porro vitae consectetur aliquam nihil
+            inventore recusandae! Tenetur aliquam labore eos repudiandae dolores maxime similique, illum quisquam
+            dignissimos, ullam ratione.</p>
+    </header>
+    <main id="main-container">
+        <section>
+            <h1>My Awesome DOM de baba</h1>
+            <ul>
+                <li>yoooooo</li>
+                <li>soooooooo</li>
+                <li>lolllllllllll</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="Fruits-title">Fruits</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>
+        <section id="places-container">
+            <h1 id="places-title">Places I like to visit</h1>
+            <ul id="places-list">
+                <li class="important-places">sundorboan</li>
+                <li class="important-places">Bandorban</li>
+                <li class="important-places">kataban</li>
+                <li class="other-place">shalban</li>
+            </ul>
+        </section>
+    </main>
+    <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script src="js/stylenis.js"></script>
+
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for (const li of liCollection) {
+            // console.log(li.innerText);
+        }
+        const allHeadings = document.getElementsByTagName('h1');
+        for (const h1 of allHeadings) {
+            // console.log(h1.innerText)
+        }
+        const someLi = document.querySelector('.fruits-container li');
+
+
+
+        // Option-1: getElementsByTagName
+        // Option-2: getElementsById
+        // Option-3:getElementsByClassName
+        // Option-4: querySelector
+        // Option-5: querySelectorALL
+    </script>
+</body>
+
+</html>
